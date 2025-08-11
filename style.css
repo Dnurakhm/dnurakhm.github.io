@@ -39,7 +39,7 @@ body{
 
 /* Hero */
 .hero{position:relative;padding:22px 0 8px;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,6,12,0.45),rgba(20,6,12,0.2)),url('images/banner.webp') center/cover no-repeat;transform:scale(1.02);z-index:0}
+.hero-bg{position:absolute;inset:0; background: linear-gradient(to bottom, rgba(255,255,255,0.25), rgba(0,0,0,0.25)),url('images/banner.webp') center/cover no-repeat;transform:scale(1.02);z-index:0}
 .hero-inner{position:relative;z-index:1;display:flex;flex-direction:column;gap:12px;padding:28px 0}
 .kicker{display:inline-block;background:rgba(255,255,255,0.06);padding:6px 10px;border-radius:999px;color:#dbeafe;font-weight:700;font-size:13px}
 .hero-title{font-size:22px;color:#fff;margin:8px 0;line-height:1.06}
