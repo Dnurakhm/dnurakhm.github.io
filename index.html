@@ -1,251 +1,356 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Личный бухгалтер — ИП и ТОО (Казахстан)</title>
-<meta name="description" content="Личный бухгалтер на аутсорсе для ИП и ТОО: сдача отчётности, ЭСФ, постановка на учёт, минимизация рисков. Бесплатная консультация.">
-<!-- Font -->
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Личный бухгалтер — ИП & ТОО (Казахстан)</title>
+  <meta name="description" content="Премиальные бухгалтерские услуги для ИП и ТОО в Казахстане — ведение, отчётность, ЭСФ, открытие и ликвидация. Персональный бухгалтер, гарантия сроков.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<!-- OFFCANVAS MOBILE MENU -->
+
+<!-- OFFCANVAS mobile menu -->
 <div id="offcanvas" class="offcanvas" aria-hidden="true">
-<button id="offClose" class="off-close" aria-label="Закрыть меню">✕</button>
-<nav class="off-nav" aria-label="Главное меню">
-<a href="#services" class="off-link">Услуги</a>
-<a href="#how" class="off-link">Как это работает</a>
-<a href="#benefits" class="off-link">Почему мы</a>
-<a href="#contact" class="off-link">Контакты</a>
-</nav>
-<div class="off-contacts">
-<a href="https://wa.me/77001234567" class="off-cta" target="_blank" rel="noopener">
-<!-- WhatsApp SVG -->
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M..." /></svg>
-
-        WhatsApp
-</a>
-<a href="https://t.me/ВАШ_НИК" class="off-cta" target="_blank" rel="noopener">
-<!-- Telegram SVG -->
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M..." /></svg>
-
-        Telegram
-</a>
-<a href="tel:+77001234567" class="off-cta">
-<!-- Phone SVG -->
-<svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M..." /></svg>
-
-        Позвонить
-</a>
+  <button id="offClose" class="off-close" aria-label="Закрыть меню">✕</button>
+  <nav class="off-nav" aria-label="Меню">
+    <a class="off-link" href="#services">Услуги</a>
+    <a class="off-link" href="#how">Как это работает</a>
+    <a class="off-link" href="#benefits">Почему мы</a>
+    <a class="off-link" href="#contact">Связаться</a>
+  </nav>
 </div>
-</div>
-<!-- HEADER (sticky) -->
+
+<!-- HEADER -->
 <header class="site-header">
-<div class="container header-inner">
-<div class="brand">
-<div class="logo">🔢</div>
-<div class="brand-text">
-<div class="brand-title">Ваш бухгалтер</div>
-<div class="brand-sub">ИП & ТОО • Казахстан</div>
-</div>
-</div>
-<button id="menuBtn" class="menu-btn" aria-label="Открыть меню">
-<span class="hamb"></span><span class="hamb"></span><span class="hamb"></span>
-</button>
-<nav class="top-nav" aria-label="Навигация">
-<a href="#services">Услуги</a>
-<a href="#how">Как это работает</a>
-<a href="#benefits">Почему мы</a>
-<a href="#contact" class="btn-small">Связаться</a>
-</nav>
-</div>
+  <div class="container header-row">
+    <div class="brand">
+      <div class="logo" aria-hidden>🔢</div>
+      <div>
+        <div class="brand-name">Ваш Бухгалтер</div>
+        <div class="brand-sub">ИП · ТОО — Казахстан</div>
+      </div>
+    </div>
+
+    <nav class="nav-desktop" aria-label="Навигация">
+      <a href="#services">Услуги</a>
+      <a href="#how">Как это работает</a>
+      <a href="#benefits">Почему мы</a>
+      <a class="btn-small" href="#contact">Связаться</a>
+    </nav>
+
+    <button id="menuBtn" class="menu-btn" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </header>
+
 <!-- HERO -->
-<section class="hero" role="banner" aria-label="Главный экран">
-<div class="hero-bg" aria-hidden></div>
-<div class="container hero-grid">
-<div class="hero-content" data-anim>
-<div class="kicker">Личный бухгалтер на аутсорсе</div>
-<h1 class="hero-title">Бухгалтерия, которая <span class="accent">защищает ваш бизнес</span></h1>
-<p class="hero-sub">Полное ведение отчетности для ИП и ТОО в Казахстане — от открытия до сдачи ЭСФ. Назначим личного бухгалтера и снимем с вас рутину.</p>
-<div class="hero-actions">
-<a class="btn btn-primary" href="#contact">Получить консультацию</a>
-<a class="btn btn-outline" href="#services">Наши услуги</a>
-</div>
-<div class="hero-meta">
-<div class="meta-item">
-<div class="meta-num" id="stat-clients">0+</div>
-<div class="meta-label">дов. клиентов</div>
-</div>
-<div class="meta-item">
-<div class="meta-num" id="stat-saved">0 ₸</div>
-<div class="meta-label">предотв. штрафов</div>
-</div>
-<div class="meta-item">
-<div class="meta-num" id="stat-years">0</div>
-<div class="meta-label">лет опыта</div>
-</div>
-</div>
-</div>
-<div class="hero-visual-wrap" data-anim>
-<img src="images/team.png" alt="Бухгалтерские услуги" class="hero-visual">
-</div>
-</div>
-<div class="promo-bar container" role="note">
-<div>Скидка 20% на первый месяц — при оформлении в течение 48 часов</div>
-<div class="countdown" id="countdown" aria-live="polite">00:00:00</div>
-</div>
+<section class="hero" id="top" role="banner" aria-label="Главный экран">
+  <div class="hero-bg" aria-hidden></div>
+
+  <div class="container hero-inner">
+    <div class="hero-left" data-anim>
+      <div class="kicker">Персональный бухгалтер на аутсорсе</div>
+      <h1 class="hero-title">Бухгалтерия для ИП и ТОО — <span class="accent">без штрафов и лишних рисков</span></h1>
+      <p class="hero-lead">Полное сопровождение: отчётность, ЭСФ, постановка на учёт, налоговая оптимизация. Персональный бухгалтер — связь в Telegram/WhatsApp.</p>
+
+      <div class="hero-actions">
+        <a class="cta-strong" href="https://wa.me/77001234567" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+          <!-- WhatsApp SVG -->
+          <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M20.52 3.48A11.94 11.94 0 0012.02 0C5.48 0 .34 5.9.34 13.18a12.7 12.7 0 002.05 6.63L0 24l4.7-1.26A11.9 11.9 0 0012 24c6.54 0 11.68-5.9 11.68-13.18 0-3.53-1.12-6.8-3.16-9.34z" fill="#fff"/></svg>
+          Написать в WhatsApp
+        </a>
+        <a class="cta-outline" href="#services">Тарифы & Услуги</a>
+      </div>
+
+      <div class="hero-stats" aria-hidden>
+        <div class="stat card" data-anim>
+          <div class="stat-num" id="stat-clients">0+</div>
+          <div class="stat-label">довольных клиентов</div>
+        </div>
+        <div class="stat card" data-anim>
+          <div class="stat-num" id="stat-saved">0 ₸</div>
+          <div class="stat-label">предотв. штрафов</div>
+        </div>
+        <div class="stat card" data-anim>
+          <div class="stat-num" id="stat-years">0</div>
+          <div class="stat-label">лет опыта</div>
+        </div>
+      </div>
+    </div>
+
 </section>
+
 <main>
-<!-- TRUST row -->
-<section class="trust container" id="trust">
-<div class="trust-grid">
-<div class="trust-card card" data-anim>
-<div class="trust-ico">✅</div>
-<div class="trust-title">100+ клиентов</div>
-</div>
-<div class="trust-card card" data-anim>
-<div class="trust-ico">🛡️</div>
-<div class="trust-title">Гарантия своевременной сдачи</div>
-</div>
-<div class="trust-card card" data-anim>
-<div class="trust-ico">💬</div>
-<div class="trust-title">Ответы в мессенджерах</div>
-</div>
-</div>
-</section>
-<!-- BENEFITS -->
-<section id="benefits" class="section container">
-<h2 class="section-title">Почему выбирают нас</h2>
-<div class="benefits-grid">
-<article class="benefit card" data-anim>
-<div class="ico">📊</div>
-<h3>Без штрафов и просрочек</h3>
-<p>Своевременная сдача отчётности и контроль платежей.</p>
-</article>
-<article class="benefit card" data-anim>
-<div class="ico">🤝</div>
-<h3>Личный бухгалтер на связи</h3>
-<p>Telegram / WhatsApp / звонок — быстрые ответы и сопровождение.</p>
-</article>
-<article class="benefit card" data-anim>
-<div class="ico">⚙️</div>
-<h3>Автоматический антиштраф</h3>
-<p>Напоминания и превентивные проверки по срокам.</p>
-</article>
-<article class="benefit card" data-anim>
-<div class="ico">💡</div>
-<h3>Оптимизация налогов</h3>
-<p>Прозрачные рекомендации и реальная экономия.</p>
-</article>
-</div>
-</section>
-<!-- SERVICES -->
-<section id="services" class="section section-alt container">
-<h2 class="section-title">Популярные услуги</h2>
-<div class="services-grid">
-<div class="service card" data-anim tabindex="0">
-<div class="service-icon">📝</div>
-<h4>Открытие / закрытие ИП</h4>
-<p>Документы, регистрация и снятие с учёта.</p>
-</div>
-<div class="service card" data-anim tabindex="0">
-<div class="service-icon">🏢</div>
-<h4>Постановка ТОО</h4>
-<p>Регистрация, выбор режима, настройка учёта.</p>
-</div>
-<div class="service card" data-anim tabindex="0">
-<div class="service-icon">📑</div>
-<h4>Сдача отчётности</h4>
-<p>Налоговая, статистическая и зарплатная отчётность.</p>
-</div>
-<div class="service card" data-anim tabindex="0">
-<div class="service-icon">💻</div>
-<h4>ЭСФ и ЭДО</h4>
-<p>Выписка и регистрация электронных счетов-фактур.</p>
-</div>
-<div class="service card" data-anim tabindex="0">
-<div class="service-icon">📂</div>
-<h4>Ведение первички</h4>
-<p>Приём и обработка первичных документов.</p>
-</div>
-<div class="service card" data-anim tabindex="0">
-<div class="service-icon">🔧</div>
-<h4>Восстановление учёта</h4>
-<p>Восстановление отчётности с минимальными рисками.</p>
-</div>
-</div>
-</section>
- 
-<!-- HOW IT WORKS -->
-<section id="how" class="section container">
-<h2 class="section-title">Как это работает</h2>
-<div class="steps" data-anim>
-<div class="step card">
-<div class="step-num">1</div>
-<h4>Оставляете заявку</h4>
-<p>Форма или мессенджер — как удобно вам.</p>
-</div>
-<div class="step card">
-<div class="step-num">2</div>
-<h4>Согласуем условия</h4>
-<p>Подберём тариф и подпишем договор.</p>
-</div>
-<div class="step card">
-<div class="step-num">3</div>
-<h4>Назначаем бухгалтера</h4>
-<p>Персональный специалист ведёт ваш учёт.</p>
-</div>
-<div class="step card">
-<div class="step-num">4</div>
-<h4>Работаем и защищаем</h4>
-<p>Сдаём отчёты, консультируем, минимизируем риски.</p>
-</div>
-</div>
-</section>
-<!-- CONTACT -->
-<section id="contact" class="section container">
-<h2 class="section-title">Связаться</h2>
-<p class="muted">Пишите или звоните — ответим быстро.</p>
-<div class="contact-ctas" data-anim>
-<a class="contact-btn wa" href="https://wa.me/77066141998" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
-<img src="ico/whatsapp.gif" alt="" width="18" height="18" />
-     WhatsApp
-</a>
-<a class="contact-btn tg" href="https://t.me/ВАШ_НИК" target="_blank" rel="noopener" aria-label="Написать в Telegram">
-<img src="ico/telegram.gif" alt="" width="18" height="18" />
-     Telegram
-</a>
-<a class="contact-btn call" href="tel:+77066141998" aria-label="Позвонить">
-<img src="ico/phone.gif" alt="" width="18" height="18" />
-     Позвонить
-</a>
-</div>
-<p class="small-note">ИИН/БИН и реквизиты предоставляются после заключения договора.</p>
-</section>
+  <!-- BENEFITS -->
+  <section id="benefits" class="section container">
+    <h2 class="section-title">Почему мы</h2>
+    <div class="benefits-grid">
+      <article class="benefit card" data-anim>
+        <div class="ico">✅</div>
+        <h3>Своевременная сдача</h3>
+        <p>Контроль сроков, напоминания и полная ответственность за отчётность.</p>
+      </article>
+      <article class="benefit card" data-anim>
+        <div class="ico">🤝</div>
+        <h3>Персональная поддержка</h3>
+        <p>Ваш личный бухгалтер в мессенджере — быстрые ответы и отчёты.</p>
+      </article>
+      <article class="benefit card" data-anim>
+        <div class="ico">🔒</div>
+        <h3>Договор и НДА</h3>
+        <p>Юридическая безопасность и конфиденциальность данных.</p>
+      </article>
+      <article class="benefit card" data-anim>
+        <div class="ico">📈</div>
+        <h3>Экономия времени</h3>
+        <p>Автоматизация и оптимизация процессов — вы фокусируетесь на бизнесе.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- SERVICES (interactive cards with prices and expandable details) -->
+  <section id="services" class="section section-alt container">
+    <h2 class="section-title">Услуги и тарифы</h2>
+
+    <div class="services-grid" id="servicesGrid">
+      <!-- Card: Открытие ИП -->
+      <article class="service card">
+        <div class="service-head">
+          <div class="service-left">
+            <div class="service-icon">📝</div>
+            <div>
+              <h3 class="service-title">Открытие ИП</h3>
+              <div class="service-sub">Регистрация и постановка на учёт</div>
+            </div>
+          </div>
+          <div class="service-right">
+            <div class="service-price">от <strong>15 000 ₸</strong></div>
+            <button class="toggle-btn" aria-expanded="false" aria-controls="svc-1">Подробнее ▾</button>
+          </div>
+        </div>
+
+        <div id="svc-1" class="service-body" hidden>
+          <ul>
+            <li>Подготовка и подача документов в ЦОН/электронно</li>
+            <li>Выбор режима налогообложения</li>
+            <li>Регистрация в налоговой, пенсионном фонде</li>
+            <li>Настройка ЭСФ и консультация по первичным документам</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn-small" href="https://wa.me/77001234567" target="_blank">Заказать</a>
+            <a class="btn-ghost" href="#contact">Уточнить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Ведение ИП -->
+      <article class="service card">
+        <div class="service-head">
+          <div class="service-left">
+            <div class="service-icon">📂</div>
+            <div>
+              <h3 class="service-title">Ведение ИП (месяц)</h3>
+              <div class="service-sub">Полный пакет для ИП — ежемесячно</div>
+            </div>
+          </div>
+          <div class="service-right">
+            <div class="service-price">от <strong>25 000 ₸/мес</strong></div>
+            <button class="toggle-btn" aria-expanded="false" aria-controls="svc-2">Подробнее ▾</button>
+          </div>
+        </div>
+
+        <div id="svc-2" class="service-body" hidden>
+          <ul>
+            <li>Ведение первичных документов и бухучёта</li>
+            <li>Сдача налоговой и статистической отчётности</li>
+            <li>Расчёт и выплата зарплаты (если есть сотрудники)</li>
+            <li>Поддержка в Telegram/WhatsApp</li>
+            <li>Ежемесячные сверки и отчёт клиенту</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn-small" href="https://wa.me/77001234567" target="_blank">Подключиться</a>
+            <a class="btn-ghost" href="#contact">Уточнить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Ведение ТОО -->
+      <article class="service card">
+        <div class="service-head">
+          <div class="service-left">
+            <div class="service-icon">🏢</div>
+            <div>
+              <h3 class="service-title">Ведение ТОО (месяц)</h3>
+              <div class="service-sub">Полный пакет для ТОО</div>
+            </div>
+          </div>
+          <div class="service-right">
+            <div class="service-price">от <strong>45 000 ₸/мес</strong></div>
+            <button class="toggle-btn" aria-expanded="false" aria-controls="svc-3">Подробнее ▾</button>
+          </div>
+        </div>
+
+        <div id="svc-3" class="service-body" hidden>
+          <ul>
+            <li>Ведение бухучёта и налогового учёта</li>
+            <li>Подготовка и сдача всех видов отчётности</li>
+            <li>ЭСФ и ЭДО — интеграция и сопровождение</li>
+            <li>Консультации по кадрам и зарплате</li>
+            <li>Юридическая поддержка по базе (опция)</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn-small" href="https://wa.me/77001234567" target="_blank">Подключиться</a>
+            <a class="btn-ghost" href="#contact">Уточнить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Восстановление учёта -->
+      <article class="service card">
+        <div class="service-head">
+          <div class="service-left">
+            <div class="service-icon">🔧</div>
+            <div>
+              <h3 class="service-title">Восстановление учёта</h3>
+              <div class="service-sub">Восстановим отчётность и минимизируем риски</div>
+            </div>
+          </div>
+          <div class="service-right">
+            <div class="service-price">от <strong>60 000 ₸</strong></div>
+            <button class="toggle-btn" aria-expanded="false" aria-controls="svc-4">Подробнее ▾</button>
+          </div>
+        </div>
+
+        <div id="svc-4" class="service-body" hidden>
+          <ul>
+            <li>Аудит текущего состояния учёта</li>
+            <li>Восстановление первичных документов и отчётов</li>
+            <li>Подготовка корректирующих документов</li>
+            <li>Сопровождение при проверках</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn-small" href="https://wa.me/77001234567" target="_blank">Заказать</a>
+            <a class="btn-ghost" href="#contact">Уточнить</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card: Разовая консультация -->
+      <article class="service card">
+        <div class="service-head">
+          <div class="service-left">
+            <div class="service-icon">💬</div>
+            <div>
+              <h3 class="service-title">Разовая консультация</h3>
+              <div class="service-sub">Конкретный вопрос или аудит</div>
+            </div>
+          </div>
+          <div class="service-right">
+            <div class="service-price">от <strong>5 000 ₸</strong></div>
+            <button class="toggle-btn" aria-expanded="false" aria-controls="svc-5">Подробнее ▾</button>
+          </div>
+        </div>
+
+        <div id="svc-5" class="service-body" hidden>
+          <ul>
+            <li>Анализ ситуации и рекомендации</li>
+            <li>Письменный отчёт по результатам (по запросу)</li>
+            <li>Рекомендации по оптимизации</li>
+          </ul>
+          <div class="service-actions">
+            <a class="btn-small" href="https://wa.me/77001234567" target="_blank">Заказать</a>
+            <a class="btn-ghost" href="#contact">Уточнить</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how" class="section container">
+    <h2 class="section-title">Как это работает</h2>
+    <div class="steps" data-anim>
+      <div class="step card">
+        <div class="step-num">1</div>
+        <h4>Оставляете заявку</h4>
+        <p>Через форму или мессенджер — быстро и удобно.</p>
+      </div>
+      <div class="step card">
+        <div class="step-num">2</div>
+        <h4>Согласуем тариф</h4>
+        <p>Подберём решение и подпишем договор.</p>
+      </div>
+      <div class="step card">
+        <div class="step-num">3</div>
+        <h4>Назначаем бухгалтера</h4>
+        <p>Персональный специалист и план перехода.</p>
+      </div>
+      <div class="step card">
+        <div class="step-num">4</div>
+        <h4>Сдаем отчёты</h4>
+        <p>Контроль, отчёт и поддержка — без лишних хлопот.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container">
+    <h2 class="section-title">Связаться</h2>
+    <p class="muted">Пишите или звоните — ответим быстро.</p>
+
+    <div class="contact-ctas" data-anim>
+      <a class="contact-btn contact-wa" href="https://wa.me/77001234567" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <!-- WhatsApp SVG -->
+        <svg class="svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M20.52 3.48A11.94 11.94 0 0012.02 0C5.48 0 .34 5.9.34 13.18a12.7 12.7 0 002.05 6.63L0 24l4.7-1.26A11.9 11.9 0 0012 24c6.54 0 11.68-5.9 11.68-13.18 0-3.53-1.12-6.8-3.16-9.34z" fill="currentColor"/></svg>
+        WhatsApp
+      </a>
+
+      <a class="contact-btn contact-tg" href="https://t.me/ВАШ_НИК" target="_blank" rel="noopener" aria-label="Telegram">
+        <!-- Telegram SVG -->
+        <svg class="svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M22 3L2 12.5 7.5 15 9 21l3.5-3 6-5.5L22 3z" fill="currentColor"/></svg>
+        Telegram
+      </a>
+
+      <a class="contact-btn contact-call" href="tel:+77001234567" aria-label="Позвонить">
+        <!-- Phone SVG -->
+        <svg class="svg-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M6.6 10.8a15.05 15.05 0 006.6 6.6l2.1-2.1a1 1 0 011.1-.2c1 .4 2 .7 2.8.9a1 1 0 01.8 1v3.4a1 1 0 01-1 1C9 22 2 15 2 6.6A1 1 0 013 5.6H6.4a1 1 0 011 .8c.2.9.5 1.8.9 2.8.2.4 0 .9-.2 1.1L6.6 10.8z" fill="currentColor"/></svg>
+        Позвонить
+      </a>
+    </div>
+
+    <p class="small-note">ИИН/БИН и реквизиты предоставляются после заключения договора.</p>
+  </section>
+
+  <!-- TRUST -->
+  <section class="section section-alt container">
+    <div class="trust-block card" data-anim>
+      <strong>Гарантия услуг.</strong> Работаем официально — договор, акты, конфиденциальность и ответственность.
+    </div>
+  </section>
 </main>
-<!-- FLOATING CONTACTS (mobile) -->
+
+<!-- Floating contacts for mobile -->
 <div class="fixed-contacts" aria-hidden>
-<a href="https://wa.me/77066141998" class="fixed-btn fixed-wa" target="_blank" rel="noopener" aria-label="WhatsApp">
-<img src="ico/whatsapp.gif" alt="WhatsApp" width="40" height="40">
-</a>
-<a href="https://t.me/ВАШ_НИК" class="fixed-btn fixed-tg" target="_blank" rel="noopener" aria-label="Telegram">
-<img src="ico/telegram.gif" alt="Telegram" width="40" height="40">
-</a>
-<a href="tel:+77066141998" class="fixed-btn fixed-call" aria-label="Позвонить">
-<img src="ico/phone.gif" alt="Позвонить" width="40" height="40">
-</a>
+  <a href="https://wa.me/77001234567" class="fixed-btn wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20.52 3.48A11.94 11.94 0 0012.02 0C5.48 0 .34 5.9.34 13.18a12.7 12.7 0 002.05 6.63L0 24l4.7-1.26A11.9 11.9 0 0012 24c6.54 0 11.68-5.9 11.68-13.18 0-3.53-1.12-6.8-3.16-9.34z" fill="#fff"/></svg>
+  </a>
+  <a href="https://t.me/ВАШ_НИК" class="fixed-btn tg" target="_blank" rel="noopener" aria-label="Telegram">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M22 3L2 12.5 7.5 15 9 21l3.5-3 6-5.5L22 3z" fill="#fff"/></svg>
+  </a>
+  <a href="tel:+77001234567" class="fixed-btn call" aria-label="Позвонить">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8a15.05 15.05 0 006.6 6.6l2.1-2.1a1 1 0 011.1-.2c1 .4 2 .7 2.8.9a1 1 0 01.8 1v3.4a1 1 0 01-1 1C9 22 2 15 2 6.6A1 1 0 013 5.6H6.4a1 1 0 011 .8c.2.9.5 1.8.9 2.8.2.4 0 .9-.2 1.1L6.6 10.8z" fill="#fff"/></svg>
+  </a>
 </div>
-<!-- FOOTER -->
+
 <footer class="site-footer">
-<div class="container">
-<div class="footer-row">
-<div>© 2025 Личный бухгалтер — ИП/ТОО</div>
-<div class="footer-contacts">Тел: <a href="tel:+77066141998">+7 (700) 614-1998</a></div>
-</div>
-</div>
+  <div class="container footer-row">
+    <div>© 2025 Ваш Бухгалтер</div>
+    <div>Тел: <a href="tel:+77001234567">+7 (700) 123-4567</a></div>
+  </div>
 </footer>
+
 <script src="script.js"></script>
 </body>
 </html>
