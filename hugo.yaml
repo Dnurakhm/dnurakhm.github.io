@@ -1,0 +1,13 @@
+baseURL: /
+locale: ru-KZ
+title: Бухгалтерские услуги | ИП и ТОО в Казахстане
+defaultContentLanguage: ru
+params:
+  description: Профессиональные бухгалтерские услуги для ИП и ТОО в Казахстане
+  phone: "+7 (777) 123-45-67"
+  email: info@accounting.kz
+  address: г. Алматы, ул. Абая, 123
+  whatsapp: "77771234567"
+  telegram: "accounting_kz"
+  instagram: "accounting_kz"
+  workHours: "Пн-Пт: 9:00 - 18:00"
